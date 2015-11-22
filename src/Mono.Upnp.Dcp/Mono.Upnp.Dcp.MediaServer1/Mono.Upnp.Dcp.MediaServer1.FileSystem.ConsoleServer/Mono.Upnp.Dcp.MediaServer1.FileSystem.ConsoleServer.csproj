@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.21022</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{DA49F3FC-22F1-4714-8C21-5971B62262FE}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AssemblyName>Mono.Upnp.Dcp.MediaServer1.FileSystem.ConsoleServer</AssemblyName>
     <RootNamespace>Mono.Upnp.Dcp.MediaServer1.FileSystem.ConsoleServer</RootNamespace>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -64,21 +63,16 @@
       <Project>{1203E9D4-B1F3-4838-8275-91782C8EC6E4}</Project>
       <Name>Mono.Upnp.Dcp.MSMediaReceiverRegistrar1</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\..\Mono.Ssdp\Mono.Ssdp\Mono.Ssdp.csproj">
+      <Project>{AD422A19-BA07-4039-B843-84E386804DD1}</Project>
+      <Name>Mono.Ssdp</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <MonoDevelop>
       <Properties>
         <Deployment.LinuxDeployData scriptName="mono-upnp-simple-media-server" />
-        <MonoDevelop.Autotools.MakefileInfo IntegrationEnabled="true" RelativeMakefileName="Makefile.am" SyncReferences="true" IsAutotoolsProject="true" RelativeConfigureInPath="../../../..">
-          <BuildFilesVar Sync="true" Name="FILES" />
-          <DeployFilesVar />
-          <ResourcesVar Sync="true" Name="RESOURCES" />
-          <OthersVar />
-          <GacRefVar Sync="true" Name="REFERENCES" />
-          <AsmRefVar Sync="true" Name="REFERENCES" />
-          <ProjectRefVar Sync="true" Name="REFERENCES" />
-        </MonoDevelop.Autotools.MakefileInfo>
       </Properties>
     </MonoDevelop>
   </ProjectExtensions>

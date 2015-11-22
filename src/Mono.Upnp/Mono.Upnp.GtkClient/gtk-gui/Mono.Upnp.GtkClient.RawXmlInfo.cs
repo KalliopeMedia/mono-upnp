@@ -5,9 +5,11 @@ namespace Mono.Upnp.GtkClient
 	public partial class RawXmlInfo
 	{
 		private global::Gtk.ScrolledWindow scrolledwindow1;
-		private global::Gtk.VBox vbox1;
-		private global::Gtk.TextView raw;
         
+		private global::Gtk.VBox vbox1;
+        
+		private global::Gtk.TextView raw;
+
 		protected virtual void Build ()
 		{
 			global::Stetic.Gui.Initialize (this);

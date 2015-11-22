@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.21022</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{582939F7-13F0-49EB-A970-15955BCE8E8E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AssemblyName>Mono.Upnp.GtkClient</AssemblyName>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <RootNamespace>Mono.Upnp.GtkClient</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -61,10 +59,8 @@
       <Package>gtk-sharp-2.0</Package>
     </Reference>
     <Reference Include="System.Xml" />
-    <Reference Include="Mono.Addins, Version=0.6.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756">
-      <Private>False</Private>
-      <Package>mono-addins</Package>
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Mono.Addins">
+      <HintPath>..\..\..\external-references\Mono.Addins.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -117,15 +113,6 @@
     <MonoDevelop>
       <Properties>
         <Deployment.LinuxDeployData scriptName="mono-upnp-gtk" />
-        <MonoDevelop.Autotools.MakefileInfo IntegrationEnabled="true" RelativeMakefileName="Makefile.am" SyncReferences="true" IsAutotoolsProject="true" RelativeConfigureInPath="../../..">
-          <BuildFilesVar Sync="true" Name="FILES" />
-          <DeployFilesVar />
-          <ResourcesVar Sync="true" Name="RESOURCES" />
-          <OthersVar />
-          <GacRefVar Sync="true" Name="REFERENCES" />
-          <AsmRefVar Sync="true" Name="REFERENCES" />
-          <ProjectRefVar Sync="true" Name="REFERENCES" />
-        </MonoDevelop.Autotools.MakefileInfo>
       </Properties>
     </MonoDevelop>
   </ProjectExtensions>
@@ -136,6 +123,10 @@
     <ProjectReference Include="..\Mono.Upnp\Mono.Upnp.csproj">
       <Project>{5E5A8C5E-334D-4ED2-B40F-34712C7E085C}</Project>
       <Name>Mono.Upnp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Mono.Ssdp\Mono.Ssdp\Mono.Ssdp.csproj">
+      <Project>{AD422A19-BA07-4039-B843-84E386804DD1}</Project>
+      <Name>Mono.Ssdp</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

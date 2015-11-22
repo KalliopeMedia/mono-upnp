@@ -5,13 +5,19 @@ namespace Mono.Upnp.GtkClient
 	public partial class MainWindow
 	{
 		private global::Gtk.UIManager UIManager;
-		private global::Gtk.VBox vbox1;
-		private global::Gtk.HPaned hpaned;
-		private global::Gtk.ScrolledWindow GtkScrolledWindow;
-		private global::Gtk.TreeView list;
-		private global::Gtk.VBox infoBox;
-		private global::Gtk.Label infoFiller;
         
+		private global::Gtk.VBox vbox1;
+        
+		private global::Gtk.HPaned hpaned;
+        
+		private global::Gtk.ScrolledWindow GtkScrolledWindow;
+        
+		private global::Gtk.TreeView list;
+        
+		private global::Gtk.VBox infoBox;
+        
+		private global::Gtk.Label infoFiller;
+
 		protected virtual void Build ()
 		{
 			global::Stetic.Gui.Initialize (this);

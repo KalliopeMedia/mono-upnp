@@ -5,11 +5,15 @@ namespace Mono.Upnp.GtkClient
 	public partial class ActionInvocationWindow
 	{
 		private global::Gtk.VBox vbox;
-		private global::Gtk.Label name;
-		private global::Gtk.VBox inputsBox;
-		private global::Gtk.Button invoke;
-		private global::Gtk.VBox outputsBox;
         
+		private global::Gtk.Label name;
+        
+		private global::Gtk.VBox inputsBox;
+        
+		private global::Gtk.Button invoke;
+        
+		private global::Gtk.VBox outputsBox;
+
 		protected virtual void Build ()
 		{
 			global::Stetic.Gui.Initialize (this);
@@ -50,34 +54,22 @@ namespace Mono.Upnp.GtkClient
 			this.invoke.Name = "invoke";
 			this.invoke.UseUnderline = true;
 			this.invoke.Relief = ((global::Gtk.ReliefStyle)(2));
-			// Container child invoke.Gtk.Container+ContainerChild
-			global::Gtk.Alignment w3 = new global::Gtk.Alignment (0.5F, 0.5F, 0F, 0F);
-			// Container child GtkAlignment.Gtk.Container+ContainerChild
-			global::Gtk.HBox w4 = new global::Gtk.HBox ();
-			w4.Spacing = 2;
-			// Container child GtkHBox.Gtk.Container+ContainerChild
-			global::Gtk.Image w5 = new global::Gtk.Image ();
-			w5.Pixbuf = global::Stetic.IconLoader.LoadIcon (this, "gtk-execute", global::Gtk.IconSize.Menu);
-			w4.Add (w5);
-			// Container child GtkHBox.Gtk.Container+ContainerChild
-			global::Gtk.Label w7 = new global::Gtk.Label ();
-			w7.LabelProp = global::Mono.Unix.Catalog.GetString ("_Invoke");
-			w7.UseUnderline = true;
-			w4.Add (w7);
-			w3.Add (w4);
-			this.invoke.Add (w3);
+			this.invoke.Label = global::Mono.Unix.Catalog.GetString ("_Invoke");
+			global::Gtk.Image w3 = new global::Gtk.Image ();
+			w3.Pixbuf = global::Stetic.IconLoader.LoadIcon (this, "gtk-execute", global::Gtk.IconSize.Menu);
+			this.invoke.Image = w3;
 			this.vbox.Add (this.invoke);
-			global::Gtk.Box.BoxChild w11 = ((global::Gtk.Box.BoxChild)(this.vbox [this.invoke]));
-			w11.Position = 2;
-			w11.Expand = false;
-			w11.Fill = false;
+			global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.vbox [this.invoke]));
+			w4.Position = 2;
+			w4.Expand = false;
+			w4.Fill = false;
 			// Container child vbox.Gtk.Box+BoxChild
 			this.outputsBox = new global::Gtk.VBox ();
 			this.outputsBox.Name = "outputsBox";
 			this.outputsBox.Spacing = 6;
 			this.vbox.Add (this.outputsBox);
-			global::Gtk.Box.BoxChild w12 = ((global::Gtk.Box.BoxChild)(this.vbox [this.outputsBox]));
-			w12.Position = 3;
+			global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.vbox [this.outputsBox]));
+			w5.Position = 3;
 			this.Add (this.vbox);
 			if ((this.Child != null)) {
 				this.Child.ShowAll ();

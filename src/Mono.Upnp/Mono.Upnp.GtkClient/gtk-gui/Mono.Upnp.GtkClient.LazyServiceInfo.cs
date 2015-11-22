@@ -5,8 +5,9 @@ namespace Mono.Upnp.GtkClient
 	public partial class LazyServiceInfo
 	{
 		private global::Gtk.Alignment alignment;
-		private global::Gtk.Label loading;
         
+		private global::Gtk.Label loading;
+
 		protected virtual void Build ()
 		{
 			global::Stetic.Gui.Initialize (this);

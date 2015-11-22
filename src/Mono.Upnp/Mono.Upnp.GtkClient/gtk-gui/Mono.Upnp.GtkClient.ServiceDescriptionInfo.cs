@@ -5,17 +5,27 @@ namespace Mono.Upnp.GtkClient
 	public partial class ServiceDescriptionInfo
 	{
 		private global::Gtk.Table table2;
-		private global::Gtk.Label controlUrl;
-		private global::Gtk.Label eventUrl;
-		private global::Gtk.Label label10;
-		private global::Gtk.Label label11;
-		private global::Gtk.Label label7;
-		private global::Gtk.Label label8;
-		private global::Gtk.Label label9;
-		private global::Gtk.Label scpdUrl;
-		private global::Gtk.Label serviceId;
-		private global::Gtk.Label serviceType;
         
+		private global::Gtk.Label controlUrl;
+        
+		private global::Gtk.Label eventUrl;
+        
+		private global::Gtk.Label label10;
+        
+		private global::Gtk.Label label11;
+        
+		private global::Gtk.Label label7;
+        
+		private global::Gtk.Label label8;
+        
+		private global::Gtk.Label label9;
+        
+		private global::Gtk.Label scpdUrl;
+        
+		private global::Gtk.Label serviceId;
+        
+		private global::Gtk.Label serviceType;
+
 		protected virtual void Build ()
 		{
 			global::Stetic.Gui.Initialize (this);

@@ -5,29 +5,51 @@ namespace Mono.Upnp.GtkClient
 	public partial class DeviceDescriptionInfo
 	{
 		private global::Gtk.Table table1;
-		private global::Gtk.Label deviceType;
-		private global::Gtk.Label friendlyName;
-		private global::Gtk.VBox iconBox;
-		private global::Gtk.Label label1;
-		private global::Gtk.Label label10;
-		private global::Gtk.Label label11;
-		private global::Gtk.Label label2;
-		private global::Gtk.Label label3;
-		private global::Gtk.Label label4;
-		private global::Gtk.Label label5;
-		private global::Gtk.Label label6;
-		private global::Gtk.Label label7;
-		private global::Gtk.Label label8;
-		private global::Gtk.Label label9;
-		private global::Gtk.Label manufacturer;
-		private global::Gtk.Label manufacturerUrl;
-		private global::Gtk.Label modelName;
-		private global::Gtk.Label modelNumber;
-		private global::Gtk.Label modelUrl;
-		private global::Gtk.Label serialNumber;
-		private global::Gtk.Label udn;
-		private global::Gtk.Label upc;
         
+		private global::Gtk.Label deviceType;
+        
+		private global::Gtk.Label friendlyName;
+        
+		private global::Gtk.VBox iconBox;
+        
+		private global::Gtk.Label label1;
+        
+		private global::Gtk.Label label10;
+        
+		private global::Gtk.Label label11;
+        
+		private global::Gtk.Label label2;
+        
+		private global::Gtk.Label label3;
+        
+		private global::Gtk.Label label4;
+        
+		private global::Gtk.Label label5;
+        
+		private global::Gtk.Label label6;
+        
+		private global::Gtk.Label label7;
+        
+		private global::Gtk.Label label8;
+        
+		private global::Gtk.Label label9;
+        
+		private global::Gtk.Label manufacturer;
+        
+		private global::Gtk.Label manufacturerUrl;
+        
+		private global::Gtk.Label modelName;
+        
+		private global::Gtk.Label modelNumber;
+        
+		private global::Gtk.Label modelUrl;
+        
+		private global::Gtk.Label serialNumber;
+        
+		private global::Gtk.Label udn;
+        
+		private global::Gtk.Label upc;
+
 		protected virtual void Build ()
 		{
 			global::Stetic.Gui.Initialize (this);

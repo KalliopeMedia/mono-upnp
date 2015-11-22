@@ -5,11 +5,15 @@ namespace Mono.Upnp.GtkClient
 	public partial class ServiceScpdInfo
 	{
 		private global::Gtk.HBox hbox1;
-		private global::Gtk.ScrolledWindow GtkScrolledWindow;
-		private global::Gtk.TreeView actions;
-		private global::Gtk.ScrolledWindow GtkScrolledWindow1;
-		private global::Gtk.TreeView stateVariables;
         
+		private global::Gtk.ScrolledWindow GtkScrolledWindow;
+        
+		private global::Gtk.TreeView actions;
+        
+		private global::Gtk.ScrolledWindow GtkScrolledWindow1;
+        
+		private global::Gtk.TreeView stateVariables;
+
 		protected virtual void Build ()
 		{
 			global::Stetic.Gui.Initialize (this);

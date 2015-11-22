@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mono.Ssdp", "Mono.Ssdp", "{5720EB87-0A37-403E-B262-826CC8982090}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mono.Ssdp", "src\Mono.Ssdp\Mono.Ssdp\Mono.Ssdp.csproj", "{AD422A19-BA07-4039-B843-84E386804DD1}"
@@ -114,7 +114,6 @@ Global
 		{EEAC4F7E-6E3D-4241-A477-8D5CB658E0B2} = {CB550FCC-8D11-4A9F-B4C9-A0DC13F5F190}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = src\Mono.Upnp\Mono.Upnp.GtkClient\Mono.Upnp.GtkClient.csproj
 		Policies = $0
 		$0.DotNetNamingPolicy = $1
 		$1.DirectoryNamespaceAssociation = Flat
@@ -129,17 +128,10 @@ Global
 		$0.TextStylePolicy = $4
 		$4.FileWidth = 120
 		$4.NoTabsAfterNonTabs = True
-		$4.RemoveTrailingWhitespace = True
 		$4.inheritsSet = VisualStudio
 		$4.inheritsScope = text/plain
 		$4.scope = text/x-csharp
 		$0.CSharpFormattingPolicy = $5
-		$5.IfElseBraceForcement = AddBraces
-		$5.ForBraceForcement = AddBraces
-		$5.ForEachBraceForcement = AddBraces
-		$5.WhileBraceForcement = AddBraces
-		$5.UsingBraceForcement = AddBraces
-		$5.FixedBraceForcement = AddBraces
 		$5.inheritsSet = Mono
 		$5.inheritsScope = text/x-csharp
 		$5.scope = text/x-csharp
@@ -148,5 +140,6 @@ Global
 		$6.inheritsScope = text/plain
 		$6.scope = text/plain
 		outputpath = bin
+		StartupItem = src\Mono.Upnp\Mono.Upnp.GtkClient\Mono.Upnp.GtkClient.csproj
 	EndGlobalSection
 EndGlobal

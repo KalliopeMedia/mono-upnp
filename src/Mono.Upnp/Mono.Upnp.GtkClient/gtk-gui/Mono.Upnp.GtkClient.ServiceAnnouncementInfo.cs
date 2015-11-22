@@ -5,13 +5,19 @@ namespace Mono.Upnp.GtkClient
 	public partial class ServiceAnnouncementInfo
 	{
 		private global::Gtk.Table table1;
-		private global::Gtk.Label deviceUdn;
-		private global::Gtk.Label label1;
-		private global::Gtk.Label label2;
-		private global::Gtk.Label label3;
-		private global::Gtk.VBox locationBox;
-		private global::Gtk.Label serviceType;
         
+		private global::Gtk.Label deviceUdn;
+        
+		private global::Gtk.Label label1;
+        
+		private global::Gtk.Label label2;
+        
+		private global::Gtk.Label label3;
+        
+		private global::Gtk.VBox locationBox;
+        
+		private global::Gtk.Label serviceType;
+
 		protected virtual void Build ()
 		{
 			global::Stetic.Gui.Initialize (this);

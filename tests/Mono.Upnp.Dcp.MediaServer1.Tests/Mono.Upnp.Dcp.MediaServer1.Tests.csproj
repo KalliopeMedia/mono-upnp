@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.21022</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{2A6588C5-BA02-4597-823A-C4DE81A8CB1D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>Mono.Upnp.Dcp.MediaServer1.Tests</RootNamespace>
     <AssemblyName>Mono.Upnp.Dcp.MediaServer1.Tests</AssemblyName>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>mono-upnp-dcp-mediaserver1-tests.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
@@ -34,17 +32,14 @@
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="nunit.core, Version=2.5.10.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77">
-      <Private>False</Private>
       <Package>nunit</Package>
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="nunit.framework, Version=2.5.10.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77">
-      <Private>False</Private>
       <Package>nunit</Package>
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="nunit.core.interfaces, Version=2.5.10.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77">
-      <Private>False</Private>
       <Package>nunit</Package>
       <SpecificVersion>False</SpecificVersion>
     </Reference>
@@ -57,6 +52,10 @@
     <ProjectReference Include="..\..\src\Mono.Upnp\Mono.Upnp\Mono.Upnp.csproj">
       <Project>{5E5A8C5E-334D-4ED2-B40F-34712C7E085C}</Project>
       <Name>Mono.Upnp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Mono.Ssdp\Mono.Ssdp\Mono.Ssdp.csproj">
+      <Project>{AD422A19-BA07-4039-B843-84E386804DD1}</Project>
+      <Name>Mono.Ssdp</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -78,16 +77,7 @@
   <ProjectExtensions>
     <MonoDevelop>
       <Properties>
-        <Deployment.LinuxDeployData generatePcFile="false" />
-        <MonoDevelop.Autotools.MakefileInfo IntegrationEnabled="true" RelativeMakefileName="Makefile.am" SyncReferences="true" IsAutotoolsProject="true" RelativeConfigureInPath="../..">
-          <BuildFilesVar Sync="true" Name="FILES" />
-          <DeployFilesVar />
-          <ResourcesVar Sync="true" Name="RESOURCES" />
-          <OthersVar />
-          <GacRefVar Sync="true" Name="REFERENCES" />
-          <AsmRefVar Sync="true" Name="REFERENCES" />
-          <ProjectRefVar Sync="true" Name="REFERENCES" />
-        </MonoDevelop.Autotools.MakefileInfo>
+        <Deployment.LinuxDeployData generatePcFile="False" />
       </Properties>
     </MonoDevelop>
   </ProjectExtensions>
